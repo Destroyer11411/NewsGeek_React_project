@@ -9,7 +9,7 @@ export class Newsitems extends Component {
     return (
       <div className="my-3">
         <div className="card" style={{width: "18rem"}}>
-          <img src={imageurl}  className="card-img-top" alt="..." />
+          <img src={!imageurl?"https://blog.sqlauthority.com/wp-content/uploads/2007/06/null-500x259.png":imageurl}  className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title"> {title}...</h5>
             <p className="card-text"> {description}...</p>
